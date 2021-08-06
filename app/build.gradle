@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -45,5 +46,7 @@ dependencies {
 
     implementation project(":proxy")
     annotationProcessor project(":proxy-compiler")
+    kapt project(":proxy-compiler")
+
 
 }
