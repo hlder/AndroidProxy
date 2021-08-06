@@ -1,0 +1,4 @@
+rootProject.name = "MyAndroidProxy"
+include ':app'
+include ':proxy'
+include ':proxy-compiler'
