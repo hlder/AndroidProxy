@@ -17,3 +17,6 @@ dependencies {
     annotationProcessor 'com.google.auto.service:auto-service:1.0'
 
 }
+
+apply from: rootProject.file('gradle/publish.gradle')
+//apply from: rootProject.file('maven_push.gradle')
