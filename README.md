@@ -8,10 +8,8 @@ apt现在很多流行框架都有使用，所以我便用apt技术实现了Andro
 ### 一、添加依赖
 
 ```groovy
-implementation project(":proxy")
-annotationProcessor project(":proxy-compiler")
-//如果使用kotlin加上下面这句话
-kapt project(":proxy-compiler")
+implementation 'io.github.hlder.proxy:proxy:1.0.2'
+kapt 'io.github.hlder.proxy:proxy-compiler:1.0.2'
 ```
 
 ### 二、在需要动态代理的类上加上@Proxy注解，该类必须要有默认构造函数
