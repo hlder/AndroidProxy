@@ -1,4 +1,4 @@
-# AndroidProxy
+# Android动态代理
 java中要实现动态代理，必须要写一个接口，才能创建动态代理。cglib可以实现不需要实现接口就能创建动态代理，但是cglib采用asm技术进行class插装，而Android中是dex所以无法使用。也有人使用dexmaker来进行dex插装，但是总有些不好用。
 
 apt现在很多流行框架都有使用，所以我便用apt技术实现了Android中的动态代理。
